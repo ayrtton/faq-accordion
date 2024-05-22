@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  body .background__desktop {
+    display: none;
+  }
+  body .background__mobile {
+    height: 25vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    display: block;
+  }
+  body .background__mobile img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+main .faqs {
+  display: flex;
+  height: 60%;
+  width: 35%;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.background__desktop {
+  height: 35vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+.background__desktop img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.background__mobile {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+@import './config', './mixins', './media-queries';
+
+body {
+    font-family: $default_font;
+    background-color: $light_pink;
+}
+
+main {
+    @include flexbox(100vh);
+    height: 100dvh;
+
+    .faqs {
+        @include flexbox(60%, 35%);
+        background-color: $white;
+    }
+}
+
+.background {
+    &__desktop {
+        @include background(35vh);
+    }
+
+    &__mobile {
+        display: none;
+    }
+}

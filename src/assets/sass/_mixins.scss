@@ -1,0 +1,21 @@
+@mixin flexbox($height: auto, $width: auto, $align_items: center, $justify_content: center) {
+    display: flex;
+    height: $height;
+    width: $width;
+    align-items: $align_items;
+    justify-content: $justify_content;
+}
+
+@mixin background($height: auto) {
+    height: $height;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+
+    img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,15 @@
+@media (max-width: 700px) {
+    body {
+        .background {
+            &__desktop {
+                display: none;
+            }
+
+            &__mobile {
+                @include background(25vh);
+                display: block;
+
+            }
+        }
+    }
+}
