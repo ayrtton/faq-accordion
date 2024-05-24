@@ -10,8 +10,58 @@ main {
     height: 100dvh;
 
     .faqs {
-        @include flexbox(60%, 35%);
+        @include flexbox(auto, 40%);
+        padding: 5vh 2vw;
+        gap: 5vh;
         background-color: $white;
+        border-radius: .9vw;
+        box-shadow: 0vw .7vw 3vw -1vw $dark_blue;
+
+        &__header {
+            @include flexbox(auto, 100%, row, center, flex-start);
+            gap: 1vw;
+            font-size: clamp(1rem, 1.5vw, 3rem);
+
+            &-icon {
+                height: 65%;
+            }
+        }
+
+        &__list {
+            &-item {
+                border-bottom: .35vh solid $light_pink;
+                padding: 2.5vh 0;
+
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+            }
+
+            &-header {
+                @include flexbox(auto, auto, row, center, space-between);
+
+                &:hover {
+                    color: $light_blue;
+                    cursor: pointer;
+                }
+            }
+
+            &-icon {
+                height: 2vw;
+            }
+
+            &-title {
+                font-size: 1.22vw;
+                font-weight: $medium_weight;
+            }
+
+            &-text {
+                font-size: 1.1vw;
+                color: $grayish_purple;
+                line-height: 145%;
+            }
+        }
     }
 }
 

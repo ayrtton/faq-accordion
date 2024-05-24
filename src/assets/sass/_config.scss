@@ -4,10 +4,13 @@ $default_font: 'Work Sans', sans-serif;
 $normal_weight: 400;
 $medium_weight: 600;
 $bold_weight: 700;
+
 $white: hsl(0, 0%, 100%);
 $light_pink: hsl(275, 100%, 97%);
 $grayish_purple: hsl(292, 16%, 49%);
 $dark_purple: hsl(292, 42%, 14%);
+$light_blue: hsl(281, 83%, 54%);
+$dark_blue: hsla(240, 100%, 24%, .3);
 
 * {
     margin: 0;
