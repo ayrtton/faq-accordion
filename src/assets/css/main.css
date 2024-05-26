@@ -45,8 +45,8 @@ main .faqs {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5vh 2vw;
-  gap: 5vh;
+  padding: 5vh 2.5vw;
+  gap: 2vh;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.9vw;
   box-shadow: 0vw 0.7vw 3vw -1vw hsla(240, 100%, 24%, 0.3);
@@ -63,6 +63,9 @@ main .faqs__header {
 }
 main .faqs__header-icon {
   height: 65%;
+}
+main .faqs__list {
+  width: 100%;
 }
 main .faqs__list-item {
   border-bottom: 0.35vh solid hsl(275, 100%, 97%);
@@ -94,7 +97,15 @@ main .faqs__list-title {
 main .faqs__list-text {
   font-size: 1.1vw;
   color: hsl(292, 16%, 49%);
+  margin-top: 0;
+  line-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+main .faqs__list .open {
   line-height: 145%;
+  margin-top: 2vh;
+  transition: 1s;
 }
 
 .background__desktop {

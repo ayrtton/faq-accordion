@@ -11,8 +11,8 @@ main {
 
     .faqs {
         @include flexbox(auto, 40%);
-        padding: 5vh 2vw;
-        gap: 5vh;
+        padding: 5vh 2.5vw;
+        gap: 2vh;
         background-color: $white;
         border-radius: .9vw;
         box-shadow: 0vw .7vw 3vw -1vw $dark_blue;
@@ -28,6 +28,8 @@ main {
         }
 
         &__list {
+            width: 100%;
+            
             &-item {
                 border-bottom: .35vh solid $light_pink;
                 padding: 2.5vh 0;
@@ -59,7 +61,16 @@ main {
             &-text {
                 font-size: 1.1vw;
                 color: $grayish_purple;
+                margin-top: 0;
+                line-height: 0;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .open {
                 line-height: 145%;
+                margin-top: 2vh;
+                transition: 1s;
             }
         }
     }
