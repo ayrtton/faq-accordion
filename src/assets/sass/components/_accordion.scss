@@ -1,0 +1,48 @@
+.faqs {
+    &__list {
+        width: 100%;
+        
+        &-item {
+            border-bottom: .35vh solid $light_pink;
+            padding: 2.5vh 0;
+
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+
+        &-header {
+            @include flexbox(auto, auto, row, center, space-between);
+
+            &:hover {
+                color: $light_blue;
+                cursor: pointer;
+            }
+        }
+
+        &-icon {
+            height: 2vw;
+        }
+
+        &-title {
+            font-size: 1.22vw;
+            font-weight: $medium_weight;
+        }
+
+        &-text {
+            font-size: 1.1vw;
+            color: $grayish_purple;
+            margin-top: 0;
+            line-height: 0;
+            overflow: hidden;
+            transition: .5s;
+        }
+
+        .open {
+            line-height: 145%;
+            margin-top: 2vh;
+            transition: 1s;
+        }
+    }
+}

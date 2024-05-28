@@ -5,7 +5,34 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) and (orientation: portrait) {
+  body main .faqs {
+    width: 70%;
+    border-radius: 1.5vh;
+    padding: 4vh;
+    box-shadow: 0vh 0.7vh 3vh -1vh hsla(240, 100%, 24%, 0.3);
+  }
+  body main .faqs__header {
+    gap: 2.5vh;
+    font-size: 2.5vh;
+  }
+  body main .faqs__list-icon {
+    height: 4.2vh;
+  }
+  body main .faqs__list-title {
+    width: 80%;
+    font-size: 2.3vh;
+  }
+  body main .faqs__list-text {
+    font-size: 2.1vh;
+  }
+}
+@media (max-width: 750px) and (orientation: portrait) {
+  body main .faqs {
+    width: 85%;
+  }
+}
+@media (max-width: 700px) and (orientation: portrait) {
   body .background__desktop {
     display: none;
   }
@@ -24,6 +51,50 @@
        object-fit: cover;
   }
 }
+.faqs__list {
+  width: 100%;
+}
+.faqs__list-item {
+  border-bottom: 0.35vh solid hsl(275, 100%, 97%);
+  padding: 2.5vh 0;
+}
+.faqs__list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.faqs__list-header {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.faqs__list-header:hover {
+  color: hsl(281, 83%, 54%);
+  cursor: pointer;
+}
+.faqs__list-icon {
+  height: 2vw;
+}
+.faqs__list-title {
+  font-size: 1.22vw;
+  font-weight: 600;
+}
+.faqs__list-text {
+  font-size: 1.1vw;
+  color: hsl(292, 16%, 49%);
+  margin-top: 0;
+  line-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.faqs__list .open {
+  line-height: 145%;
+  margin-top: 2vh;
+  transition: 1s;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   background-color: hsl(275, 100%, 97%);
@@ -59,53 +130,10 @@ main .faqs__header {
   align-items: center;
   justify-content: flex-start;
   gap: 1vw;
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(0.6rem, 1.5vw, 3rem);
 }
 main .faqs__header-icon {
   height: 65%;
-}
-main .faqs__list {
-  width: 100%;
-}
-main .faqs__list-item {
-  border-bottom: 0.35vh solid hsl(275, 100%, 97%);
-  padding: 2.5vh 0;
-}
-main .faqs__list-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-main .faqs__list-header {
-  display: flex;
-  height: auto;
-  width: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-main .faqs__list-header:hover {
-  color: hsl(281, 83%, 54%);
-  cursor: pointer;
-}
-main .faqs__list-icon {
-  height: 2vw;
-}
-main .faqs__list-title {
-  font-size: 1.22vw;
-  font-weight: 600;
-}
-main .faqs__list-text {
-  font-size: 1.1vw;
-  color: hsl(292, 16%, 49%);
-  margin-top: 0;
-  line-height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-}
-main .faqs__list .open {
-  line-height: 145%;
-  margin-top: 2vh;
-  transition: 1s;
 }
 
 .background__desktop {
