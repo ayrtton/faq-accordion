@@ -1,0 +1,12 @@
+.attribution {
+    @include flexbox(12vh, 100%, column, center, center);
+    font-size: 1vw;
+    gap: 1vh;
+    text-align: center;
+
+    &__link {
+        text-decoration: none;
+        transition: .5s;
+        color: $light_blue;
+    }
+}

@@ -26,6 +26,9 @@
   body main .faqs__list-text {
     font-size: 2.1vh;
   }
+  footer .attribution {
+    font-size: 1.8vh;
+  }
 }
 @media (max-width: 750px) and (orientation: portrait) {
   body main .faqs {
@@ -93,6 +96,23 @@
   line-height: 145%;
   margin-top: 2vh;
   transition: 1s;
+}
+
+.attribution {
+  display: flex;
+  height: 12vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1vw;
+  gap: 1vh;
+  text-align: center;
+}
+.attribution__link {
+  text-decoration: none;
+  transition: 0.5s;
+  color: hsl(281, 83%, 54%);
 }
 
 body {
